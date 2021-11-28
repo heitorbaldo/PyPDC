@@ -1,5 +1,5 @@
 
-.. image:: https://raw.githubusercontent.com/heitorbaldo/pypdc/blob/master/logo.png?sanitize=true
+.. image:: logo.png
 
 
 

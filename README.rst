@@ -1,4 +1,4 @@
-<img src="logo.png" width="360px">
+(https://raw.githubusercontent.com/heitorb/pypdc/master/logo.png)
 
 
 .. image:: https://img.shields.io/pypi/v/pypdc.svg

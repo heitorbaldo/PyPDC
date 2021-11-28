@@ -1,4 +1,4 @@
-!(https://github.com//heitorbaldo/pypdc/blob/master/logo.png?raw=true)
+![logo](https://github.com//heitorbaldo/pypdc/blob/master/logo.png?raw=true)
 
 
 .. image:: https://img.shields.io/pypi/v/pypdc.svg

@@ -1,6 +1,4 @@
-=====
-pypdc
-=====
+<img src="logo.png" width="360px">
 
 
 .. image:: https://img.shields.io/pypi/v/pypdc.svg

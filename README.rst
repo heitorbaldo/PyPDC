@@ -26,8 +26,9 @@ Python asymptotic Partial Directed Coherence and Directed Coherence estimation p
 
 Installation
 --------
+You can install the PyPDC package from the PyPi repository through the pip command::
 
-    $ pip install pypdc
+     pip install pypdc
 
 
 Features

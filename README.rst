@@ -24,6 +24,12 @@ Python asymptotic Partial Directed Coherence and Directed Coherence estimation p
 * Free software: MIT license
 * Documentation: https://pypdc.readthedocs.io.
 
+Installation
+--------
+
+```
+pip install pypdc
+```
 
 Features
 --------

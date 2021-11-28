@@ -27,9 +27,8 @@ Python asymptotic Partial Directed Coherence and Directed Coherence estimation p
 Installation
 --------
 
-```
-pip install pypdc
-```
+    $ pip install pypdc
+
 
 Features
 --------

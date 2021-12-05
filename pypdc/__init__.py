@@ -9,7 +9,7 @@ PDC is a Python package for calculating asymptotic Partial Directed Coherence es
 name = "pypdc"
 
 #Current version:
-__version__ = "0.0.5"
+__version__ = "0.0.8"
 
 
 

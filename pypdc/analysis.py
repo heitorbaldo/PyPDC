@@ -559,7 +559,7 @@ def pdc_pdc2_th(data, maxp = 20, nf = 64, sample_f = 1,
         ic2 = zeros(mes.shape)
 
     ssm = ss_alg(Aest, erest, nf)
-    return mes, th
+    return mes, th, ic1
 
 
 #M and Th are n x n matrices:
@@ -589,8 +589,8 @@ def pdc_matrix(data, maxp = 20, nf = 64, sample_f = 1,
                    plotf = None):
         logo()
         
-        pdc2_th = pdc_pdc2_th(data, maxp = 20, nf = 64, sample_f = 1,
-                   ss = True, alpha = 0.01, metric = 'info',
+        pdc2_th = pdc_pdc2_th(data, maxp, nf, sample_f = 1,
+                   ss = True, alpha = alpha, metric = metric,
                    detrend = True, normalize = False,
                    stat = 'asymp', n_boot = 1000, fixp = False,
                    plotf = None)
@@ -598,6 +598,27 @@ def pdc_matrix(data, maxp = 20, nf = 64, sample_f = 1,
         M = mat_c(pdc2_th[0])
         Th = mat_c(pdc2_th[1])
         compMatrices(M, Th)
+        
+        print("\n PDC connectivity matrix:")
+        return M
+    
+    
+def pdc_matrix_ci(data, maxp = 20, nf = 64, sample_f = 1,
+                   ss = True, alpha = 0.01, metric = 'info',
+                   detrend = True, normalize = False,
+                   stat = 'asymp', n_boot = 1000, fixp = False,
+                   plotf = None):
+        logo()
+        
+        pdc2_th = pdc_pdc2_th(data, maxp, nf, sample_f = 1,
+                   ss = True, alpha = alpha, metric = metric,
+                   detrend = True, normalize = False,
+                   stat = 'asymp', n_boot = 1000, fixp = False,
+                   plotf = None)
+        
+        M = mat_c(pdc2_th[0])
+        CI = mat_c(pdc2_th[2])
+        compMatrices(M, CI)
         
         print("\n PDC connectivity matrix:")
         return M

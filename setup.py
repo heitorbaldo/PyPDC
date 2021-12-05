@@ -5,7 +5,7 @@ from setuptools import setup
 
 
 name = "pypdc"
-version="0.0.5"
+version="0.0.8"
 description = "Python asymptotic Partial Directed Coherence and Directed Coherence estimation package for brain connectivity analysis."
 authors = {
     "Sameshima": ("Koichi Sameshima", "ksameshi@usp.br"),
